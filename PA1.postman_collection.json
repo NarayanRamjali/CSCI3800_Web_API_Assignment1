@@ -1,0 +1,51 @@
+{
+	"id": "84301b62-9e3a-e21b-d7b3-ef443fd5e382",
+	"name": "PA1",
+	"description": "",
+	"order": [
+		"772f440f-c190-8572-588a-61a8ddee0aa9",
+		"03894cc7-30fd-300a-03ca-bb530211daf8"
+	],
+	"folders": [],
+	"timestamp": 1486276439691,
+	"owner": "1501553",
+	"public": false,
+	"requests": [
+		{
+			"id": "03894cc7-30fd-300a-03ca-bb530211daf8",
+			"headers": "",
+			"url": "https://www.googleapis.com/books/v1/volumes/{{id}}",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1486276902442,
+			"name": "ID_Request",
+			"description": "",
+			"collectionId": "84301b62-9e3a-e21b-d7b3-ef443fd5e382",
+			"responses": []
+		},
+		{
+			"id": "772f440f-c190-8572-588a-61a8ddee0aa9",
+			"headers": "",
+			"url": "https://www.googleapis.com/books/v1/volumes?q={{book_title}}",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": "postman.setEnvironmentVariable(\"book_title\", \"turing\");\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar result = JSON.parse(responseBody),\nID = result.items[0].id\n\npostman.setEnvironmentVariable(\"id\", ID);",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1486276614047,
+			"name": "title_request",
+			"description": "",
+			"collectionId": "84301b62-9e3a-e21b-d7b3-ef443fd5e382",
+			"responses": []
+		}
+	]
+}
