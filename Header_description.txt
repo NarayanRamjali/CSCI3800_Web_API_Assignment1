@@ -1,16 +1,65 @@
-
+There are 13 HTTP headers and their requests and responds are as follows:
 
 
 Alt-Svc →quic=":443"; ma=2592000; v="35,34"
+    It allows HTTP server to nominate. ma=2592000 is maximum time in second. and v="35,34" is the value.
+
+
 Cache-Control →private, max-age=0, must-revalidate, no-transform
+    private -> store in the orivate cache, max-age=0 ->maximum time, 
+    must-revalidate -> use of revalidate resources. no-transform -> not transfer the resources.
+
 Content-Length →35434
+    size of the length.
+
+
 Content-Type →application/json; charset=UTF-8
+    use of application JASON. JASON is charset=UTF-8
+
+
 Date →Sun, 05 Feb 2017 03:39:01 GMT
+    time of irigine of the message.
+
+
 ETag →"vFp1TYDMppbWxVi0Wgw_upD83cI/jLixtKfbroN4BvIS2lH2xFh8L84"
+    Entity tage checks the message sent or not.
+
 Expires →Sun, 05 Feb 2017 03:39:01 GMT
+    this is the message expire date and time.
+
+
 Server →GSE
+    this server handle the requests.
+
+
 Vary →Origin
+    this is the origin of message
+
+
 Vary →X-Origin
+    the origin is vary.
+    
+
 X-Content-Type-Options →nosniff
+    it filters which types of files to send.
+
 X-Frame-Options →SAMEORIGIN
+    It makes the same origin for the object for the same elements. 
+
+
 X-XSS-Protection →1; mode=block
+      it protects from xss attack.
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
