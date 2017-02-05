@@ -1,76 +1,51 @@
 {
-  "kind": "books#volume",
-  "id": "HyMcH_9eTtoC",
-  "etag": "69rsi5ffO9E",
-  "selfLink": "https://www.googleapis.com/books/v1/volumes/HyMcH_9eTtoC",
-  "volumeInfo": {
-    "title": "Alan Turing",
-    "subtitle": "The Enigma",
-    "authors": [
-      "Andrew Hodges"
-    ],
-    "publisher": "Princeton University Press",
-    "publishedDate": "2012",
-    "description": "<br> <p>It is only a slight exaggeration to say that the British mathematician Alan Turing (1912-1954) saved the Allies from the Nazis, invented the computer and artificial intelligence, and anticipated gay liberation by decades--all before his suicide at age forty-one. This classic biography of the founder of computer science, reissued on the centenary of his birth with a substantial new preface by the author, is the definitive account of an extraordinary mind and life. A gripping story of mathematics, computers, cryptography, and homosexual persecution, Andrew Hodges's acclaimed book captures both the inner and outer drama of Turing's life.</p> <br> <p>Hodges tells how Turing's revolutionary idea of 1936--the concept of a universal machine--laid the foundation for the modern computer and how Turing brought the idea to practical realization in 1945 with his electronic design. The book also tells how this work was directly related to Turing's leading role in breaking the German Enigma ciphers during World War II, a scientific triumph that was critical to Allied victory in the Atlantic. At the same time, this is the tragic story of a man who, despite his wartime service, was eventually arrested, stripped of his security clearance, and forced to undergo a humiliating treatment program--all for trying to live honestly in a society that defined homosexuality as a crime.</p> <br>",
-    "industryIdentifiers": [
-      {
-        "type": "ISBN_13",
-        "identifier": "9780691155647"
-      },
-      {
-        "type": "ISBN_10",
-        "identifier": "069115564X"
-      }
-    ],
-    "readingModes": {
-      "text": false,
-      "image": true
-    },
-    "pageCount": 586,
-    "printedPageCount": 628,
-    "dimensions": {
-      "height": "20.00 cm",
-      "width": "12.70 cm",
-      "thickness": "4.10 cm"
-    },
-    "printType": "BOOK",
-    "categories": [
-      "Biography & Autobiography / Science & Technology"
-    ],
-    "averageRating": 1,
-    "ratingsCount": 1,
-    "maturityRating": "NOT_MATURE",
-    "allowAnonLogging": false,
-    "contentVersion": "preview-1.0.0",
-    "imageLinks": {
-      "smallThumbnail": "http://books.google.com/books/content?id=HyMcH_9eTtoC&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE71xFz30IZOt1xk9Tn0BntcOgt1W5efpDcKoouq0hRKUhvZqKwWfx8uzuvyLkykrXDcxRtaH-r-cBPp6rRKzCXg8H0ogytnhFqGLL8UI0oiaxgQrmlXFW6Dj1-a0PBRz8Rr1bmJ0&source=gbs_api",
-      "thumbnail": "http://books.google.com/books/content?id=HyMcH_9eTtoC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71ph1eOYcBJMtiLWiogTf0-uZyjyU5xGRxW7FfAtb0aA5ezemDgJ7SRwi4uf3_oSKIHcdPv08R-vkymkBg1QsHXT7Xi7lOeZlDcz5y3H85dHPNr4eV3Om8vpopXZgSmJ4YpQYFU&source=gbs_api",
-      "small": "http://books.google.com/books/content?id=HyMcH_9eTtoC&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE71sYam46t7Ju_T9Nydi4Muj3S08kxkeIobT_kQ5VnaAmuK2LH2DmB_yohyzg-gGaN6LntmU9qvjh_xPY8bCal-HXFft0y1ks0ulK1pYbKneGZwI2oVFCEIiz1p5NxCpAR520Sug&source=gbs_api"
-    },
-    "language": "en",
-    "previewLink": "http://books.google.com/books?id=HyMcH_9eTtoC&hl=&source=gbs_api",
-    "infoLink": "https://play.google.com/store/books/details?id=HyMcH_9eTtoC&source=gbs_api",
-    "canonicalVolumeLink": "https://market.android.com/details?id=book-HyMcH_9eTtoC"
-  },
-  "saleInfo": {
-    "country": "US",
-    "saleability": "NOT_FOR_SALE",
-    "isEbook": false
-  },
-  "accessInfo": {
-    "country": "US",
-    "viewability": "PARTIAL",
-    "embeddable": true,
-    "publicDomain": false,
-    "textToSpeechPermission": "ALLOWED",
-    "epub": {
-      "isAvailable": false
-    },
-    "pdf": {
-      "isAvailable": false
-    },
-    "webReaderLink": "http://books.google.com/books/reader?id=HyMcH_9eTtoC&hl=&printsec=frontcover&output=reader&source=gbs_api",
-    "accessViewStatus": "SAMPLE",
-    "quoteSharingAllowed": false
-  }
+	"id": "84301b62-9e3a-e21b-d7b3-ef443fd5e382",
+	"name": "PA1",
+	"description": "",
+	"order": [
+		"772f440f-c190-8572-588a-61a8ddee0aa9",
+		"03894cc7-30fd-300a-03ca-bb530211daf8"
+	],
+	"folders": [],
+	"timestamp": 1486276439691,
+	"owner": "1501553",
+	"public": false,
+	"requests": [
+		{
+			"id": "03894cc7-30fd-300a-03ca-bb530211daf8",
+			"headers": "",
+			"url": "https://www.googleapis.com/books/v1/volumes/{{id}}",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1486276902442,
+			"name": "ID_Request",
+			"description": "",
+			"collectionId": "84301b62-9e3a-e21b-d7b3-ef443fd5e382",
+			"responses": []
+		},
+		{
+			"id": "772f440f-c190-8572-588a-61a8ddee0aa9",
+			"headers": "",
+			"url": "https://www.googleapis.com/books/v1/volumes?q={{book_title}}",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": "postman.setEnvironmentVariable(\"book_title\", \"turing\");\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar result = JSON.parse(responseBody),\nID = result.items[0].id\n\npostman.setEnvironmentVariable(\"id\", ID);",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1486276614047,
+			"name": "title_request",
+			"description": "",
+			"collectionId": "84301b62-9e3a-e21b-d7b3-ef443fd5e382",
+			"responses": []
+		}
+	]
 }
